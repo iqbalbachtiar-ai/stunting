@@ -3,6 +3,7 @@
 use App\Http\Controllers\Alternatif;
 use App\Http\Controllers\Beranda;
 use App\Http\Controllers\Kriteria;
+use App\Http\Controllers\Pembobotan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,6 @@ Route::get('/alternatif/import', [Alternatif::class, 'import']);
 
 //kriteria
 Route::get('/kriteria', [Kriteria::class, 'index']);
+
+//pembobotan
+Route::get('/pembobotan', [Pembobotan::class, 'index']);
