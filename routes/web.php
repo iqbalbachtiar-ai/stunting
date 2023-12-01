@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Alternatif;
 use App\Http\Controllers\Beranda;
+use App\Http\Controllers\Kriteria;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [Beranda::class, 'index']);
 Route::get('/alternatif', [Alternatif::class, 'index']);
+Route::get('/alternatif/import', [Alternatif::class, 'import']);
+
+//kriteria
+Route::get('/kriteria', [Kriteria::class, 'index']);
